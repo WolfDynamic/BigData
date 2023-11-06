@@ -1,0 +1,14 @@
+Выполнил Волков Александр Юрьевич
+<Номер задания>) <Команда>
+2) help
+3) hdfs dfs -ls /
+4) hdfs dfs -mkdir -p /user/mgpu/VolkovAJ
+5) base64 /dev/urandom | head -c 10000000 > VAJ.txt
+6) gzip -c VAJ.txt > VAJ.gz
+7) hdfs dfs -copyFromLocal ./VAJ.* /user/mgpu/VolkovAJ
+8.1) hdfs dfs -cat /user/mgpu/VolkovAJ/VAJ.txt | head -n 3
+8.2) hdfs dfs -cat /user/mgpu/VolkovAJ/VAJ.txt | tail -n 3
+8.3) hdfs dfs -cat /user/mgpu/VolkovAJ/VAJ.gz | gunzip | head -n 3
+9) hdfs dfs -cp /user/mgpu/VolkovAJ/VAJ.txt /user/mgpu/VolkovAJ/Mon_Nov_6_2023_VAJ.txt
+10) hdfs dfs -ls /user/mgpu/VolkovAJ
+11) hdfs dfs -rm -r -f /user/mgpu/VolkovAJ
